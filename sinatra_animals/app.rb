@@ -23,7 +23,7 @@ get '/puppy' do
 		:name => 'Paulie',
 		:cuteness => 10,
 		:habitat => 'bed',
-		:picture_url => 'http://45.34.11.183/ga_hw/images/paul.jpg',
+		:picture_url => 'http://45.34.11.183/ga_hw/images/paulie.jpg',
 		:description => 'what a smelly buddy'
 	}.to_json
 end
@@ -33,7 +33,7 @@ get '/turtle' do
 		:name => 'Stella',
 		:cuteness => 8,
 		:habitat => 'terrarium',
-		:picture_url => 'http://45.34.11.183/ga_hw/images/turtle.jpg',
+		:picture_url => 'https://i.ytimg.com/vi/p4Jj9QZFJvw/hqdefault.jpg',
 		:description => 'idunno turtles are just cute'
 	}.to_json
 end
@@ -52,10 +52,14 @@ get '/tiny_bug' do
 	the_deets = {
 		:name => 'Earl',
 		:cuteness => 10,
-		:habitat => "not sure, it's hard to see him ",
+		:habitat => "not sure, it's hard to see him. my basil plant?",
 		:picture_url => 'http://45.34.11.183/ga_hw/images/tiny_bug.jpg',
 		:description => "You think it's invisible friend but it's not invisible it's just really really small"
 	}.to_json
+end
+
+get '/friends' do
+	erb :animals
 end
 
 
