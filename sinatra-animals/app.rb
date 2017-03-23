@@ -3,9 +3,10 @@ Bundler.require()
 
 get '/' do
 	@title = {
-		:name => "Nate's Cute Zoo!"
+		:name => "Nate's Cute Zoo!",
 		:message => "Welcome to the Zoo, here we have the cutest baby animals on the planet."
 	}
+end
 
 get '/kitties' do
 	@kitties = {
