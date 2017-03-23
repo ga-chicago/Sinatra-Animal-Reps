@@ -65,6 +65,8 @@ get '/bird' do
 		:picture_url => "",
 		:description =>	"looks like a bird"
 	}.to_json
+
+	erb :bird
 end
 
 
